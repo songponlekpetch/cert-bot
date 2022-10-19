@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  app:
+    platform: linux/amd64
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./cert-data:/etc/letsencrypt
